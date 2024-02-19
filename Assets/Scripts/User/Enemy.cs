@@ -117,9 +117,12 @@ namespace VUD_Project.User
             manager.SetWaveBoolValue(true);
             animator.SetBool("Die", true);
             Destroy(this.gameObject, 1f);
+
+            
+            
         }
 
-
+       
 
 
 

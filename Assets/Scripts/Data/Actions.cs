@@ -9,6 +9,9 @@ namespace VUD_Project.Data
     {
         public static Action OnEnemyDie;
         public static Action OnGameStarted;
+
+
+        
     }
 }
 

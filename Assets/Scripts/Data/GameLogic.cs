@@ -14,14 +14,10 @@ namespace VUD_Project.Data
         public static GameObject turret2;
         public static GameObject turret3;
 
-        //public static Dictionary<int, BoardEnemy> enemyDictionary = new Dictionary<int, BoardEnemy>();
-        //public static List<int> enemyIDList = new List<int>(); 
-
+       
 
         public static void CreateTurret(GameObject turret, Transform transform)
         {
-
-
             GameObject.Instantiate(turret,transform.position, transform.rotation);
         }
         public static void GetFolderPositionTurrets()

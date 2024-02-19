@@ -13,6 +13,8 @@ public class Manager : MonoBehaviour
     protected bool waveValue;
     protected int repeatValue;
 
+    public Light light;
+
    
     private void Awake()
     {
@@ -29,7 +31,7 @@ public class Manager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
       
-
+       
     }
 
 
@@ -40,6 +42,15 @@ public class Manager : MonoBehaviour
             StartCoroutine(CallEnemyWave(repeatValue));
             waveValue = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Camera.main.orthographic = true;
+            Camera.main.orthographicSize = 75;
+            
+        }
+
+
     }
 
     public void StartGame()
